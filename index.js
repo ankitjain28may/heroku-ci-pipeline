@@ -7,5 +7,9 @@ app.get('/', (req, res) => {
   res.send("Congratulations, Hello world");
 })
 
+app.get('/ci', (req, res) => {
+  res.send("Hey, This is me CI!");
+})
+
 app.listen(port);
 console.log("Server started at port " + port);
