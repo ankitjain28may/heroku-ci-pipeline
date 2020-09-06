@@ -11,5 +11,9 @@ app.get('/ci', (req, res) => {
   res.send("Hey, This is me CI!");
 })
 
+app.get('/pr', (req, res) => {
+  res.send("Hey, This is PR Review Apps feature!");
+})
+
 app.listen(port);
 console.log("Server started at port " + port);
